@@ -1,9 +1,9 @@
 # PSHipChat
 
-PSHipchat is a collection of PowerShell Cmdlets that let you simplify and automate your interactions with HipChat. Based on [HipChat API v2](https://www.hipchat.com/docs/apiv2).
+PSHipchat module is a collection of PowerShell cmdlets that let you simplify and automate your interactions with HipChat. Based on the [HipChat API v2](https://www.hipchat.com/docs/apiv2).
 
 ## Installation
-Download the [latest binary](https://github.com/davestephens/PSHipchat/archive/master.zip)
+Download the [latest binary](https://github.com/davestephens/PSHipChat/archive/master.zip).
 
 Extract the zip, rename the folder within it to "PSHipChat", and copy to a folder in your`$env:PSModulePath`.
 
@@ -22,9 +22,10 @@ To get help on a specific cmdlet:
 
 ## TODO
 
+- Work out how to write some meaningful tests.
 - Deal with result sets from the API that are larger than the MaxResults parameter.
 - More cmdlets!
-- Tidy up with reference to the [PowerShell Best Practises and Style Guide](https://github.com/PoshCode/PowerShellPracticeAndStyle)
+- Tidy up with reference to the [PowerShell Best Practises and Style Guide](https://github.com/PoshCode/PowerShellPracticeAndStyle).
 
 ## Contributing
 

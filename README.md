@@ -5,9 +5,9 @@ CompleteHipChat module is a collection of PowerShell cmdlets that let you simpli
 Requires PowerShell v3 or greater.
 
 ## Installation
-Download the [latest binary](https://github.com/davestephens/PSHipChat/archive/master.zip).
+Download the [latest binary](https://github.com/davestephens/CompleteHipChat/archive/master.zip).
 
-Extract the zip, rename the folder within it to "PSHipChat", and copy to a folder in your`$env:PSModulePath`.
+Extract the zip, rename the folder within it to "CompleteHipChat", and copy to a folder in your `$env:PSModulePath`.
 
 ## Usage
 To load the module:

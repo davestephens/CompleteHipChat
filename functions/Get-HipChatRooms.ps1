@@ -56,23 +56,14 @@ function Get-HipChatRooms {
 
 	process	{
 		try {
-			$url = "https://$ApiHost/v2/room"
+			$url = "https://$ApiHost/v2/room?max-results=$MaxResults&include-archived=$IncludeArchived&include-private=$IncludePrivate"
 			Write-Verbose $url
 
 			$headers = @{			
 				"Authorization" = "Bearer $AuthToken"
 			}
-
-			$messageContent = @{
-				"max-results" = $MaxResults
-				"include-archived" = $IncludeArchived
-				"include-private" = $IncludePrivate
-			}
-
-			$jsonMessage = ConvertTo-Json $messageContent
-			Write-Verbose $jsonMessage
-
-			$result = Invoke-RestMethod -Method Get -Uri $url -Headers $headers -TimeoutSec $TimeoutSecs -Body $jsonMessage -ContentType 'application/json'
+		
+			$result = Invoke-RestMethod -Method Get -Uri $url -Headers $headers -TimeoutSec $TimeoutSecs -ContentType 'application/json'
 		}
 		catch {
 			throw $_
